@@ -1,0 +1,57 @@
+﻿.report-inputs {
+    padding-top: 25px;
+}
+
+.search-by-name {
+    width: 325px;
+}
+
+.date-input {
+    width: 225px;
+}
+
+.organization-details {
+    font-weight: 600;
+    font-size: 16px;
+    color: darkblue;
+    margin-top: 10px;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    padding: 0 0 20px 0;
+    display: block;
+    background-color: #e7e9ec;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0,0,0,.25);
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.profile {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: default;
+    font-size: 0.8em;
+    display: none;
+}
+
+@media all and (min-width: 992px) {
+    .profile {
+        display: inherit;
+    }
+}
+
+.tile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
