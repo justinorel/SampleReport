@@ -4,23 +4,9 @@
     <div class="container report-inputs">
         <div class="form-group">
             <div class="col-sm-2 col-md-2 col-lg-2" style="padding-top:25px">
-                <button type="submit" class="btn btn-primary" (click)="get()">Search</button>
+                <kendo-datepicker [(value)]="startDate"></kendo-datepicker>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row report-viewer">
-    <tr-viewer id="peak-usage-viewer"
-               [containerStyle]="viewerContainerStyle"
-               [serviceUrl]="'/api/reports/'"
-               [reportSource]="{
-                    report:'PeakUsageReport.trdp',
-                    parameters:{}
-               }"
-               [viewMode]="'INTERACTIVE'"
-               [scaleMode]="'SPECIFIC'"
-               [scale]="1.0"
-               [ready]="readyHandler">
-    </tr-viewer>
-</div>

@@ -8,10 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var animations_1 = require("@angular/platform-browser/animations");
+var kendo_angular_dateinputs_1 = require("@progress/kendo-angular-dateinputs");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var report_api_service_1 = require("./report-api.service");
-var telerik_angular_report_viewer_1 = require("@progress/telerik-angular-report-viewer");
+var kendo_angular_intl_1 = require("@progress/kendo-angular-intl");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,7 +24,9 @@ AppModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             http_1.HttpModule,
-            telerik_angular_report_viewer_1.TelerikReportingModule
+            kendo_angular_dateinputs_1.DateInputsModule,
+            animations_1.BrowserAnimationsModule,
+            kendo_angular_intl_1.IntlModule
         ],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent],

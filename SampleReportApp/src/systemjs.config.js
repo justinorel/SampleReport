@@ -15,14 +15,18 @@
       'app': './src/app',
 
       // angular bundles
+      "@angular": "npm:@angular",
+      "@angular/animations/browser": "npm:@angular/animations/bundles/animations-browser.umd.js",
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
       '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
+      '@angular/platform-browser/animations': 'npm:@angular/platform-browser/bundles/platform-browser-animations.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      'tslib': 'npm:tslib/tslib.js',
 
       // other libraries
       'rxjs': 'npm:rxjs',
@@ -47,11 +51,36 @@
       rxjs: {
         defaultExtension: 'js'
       },
+      "@angular/animations": {
+          "main": "bundles/animations.umd.js"
+      },
       // Telerik Angular Report Viewer package
       '@progress/telerik-angular-report-viewer': {
           main: 'dist/cjs/main',
           format: 'cjs',
           defaultExtension: 'js'
+      },
+      // Telerik Kendo UI
+      "@progress/kendo-angular-l10n": {
+          main: "dist/cdn/js/kendo-angular-l10n.js",
+          defaultExtension: "js"
+          //main: 'dist/cdn/js/kendo-angular-l10n',
+          //format: 'cdn',
+          //defaultExtension: 'js'
+      },
+      "@progress/kendo-angular-intl": {
+          main: "dist/cdn/js/kendo-angular-intl.js",
+          defaultExtension: "js"
+          //main: 'dist/cdn/js/kendo-angular-intl',
+          //format: 'cdn',
+          //defaultExtension: 'js'
+      },
+      "@progress/kendo-angular-dateinputs": {
+          main: "dist/cdn/js/kendo-angular-dateinputs.js",
+          defaultExtension: "js"
+          //main: 'dist/cdn/js/kendo-angular-dateinputs',
+          //format: 'cdn',
+          //defaultExtension: 'js'
       }
     }
   });
